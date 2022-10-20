@@ -50,11 +50,36 @@
         </div>
 		<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
-  window.googletag = window.googletag || {cmd: []};
+  window.googletag = window.googletag || {
+    cmd: []
+  };
   googletag.cmd.push(function() {
     googletag.defineSlot('/6062/GK_test_adunit', [728, 90], 'div-gpt-ad-1655916847718-0').addService(googletag.pubads());
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
+
+
+    googletag.pubads().addEventListener('slotRenderEnded',
+      function(event) {
+        var slot = event.slot;
+        console.group(
+          'Slot', slot.getSlotElementId(), 'finished rendering.');
+
+        // Log details of the rendered ad.
+        console.log('Advertiser ID:', event.advertiserId);
+        console.log('Campaign ID: ', event.campaignId);
+        console.log('Creative ID: ', event.creativeId);
+        console.log('Is empty?:', event.isEmpty);
+        console.log('Line Item ID:', event.lineItemId);
+        console.log('Size:', event.size);
+        console.log('Source Agnostic Creative ID:',
+          event.sourceAgnosticCreativeId);
+        console.log('Source Agnostic Line Item ID:',
+          event.sourceAgnosticLineItemId);
+        console.groupEnd();
+
+      }
+    );
   });
 </script>
 	</header>
