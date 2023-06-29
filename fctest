@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ad Page with Slideshow</title>
+    <style>
+
+      h1 {
+        text-align: center;
+      }
+      
+      .ad-container {}
+
+      #left-ad {
+        float: left;
+      }
+
+      #right-ad {
+        float: right;
+      }
+
+      #top-ad {
+        clear: both;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .slideshow-container {
+        margin: 50px auto;
+        width: 500px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid black;
+      }
+
+      .slideshow-container img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+
+      .slideshow-container .prev,
+      .slideshow-container .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        cursor: pointer;
+      }
+
+      .slideshow-container .prev {
+        left: 10px;
+      }
+
+      .slideshow-container .next {
+        right: 10px;
+      }
+
+      .slideshow-container .dot-container {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .slideshow-container .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .slideshow-container .dot.active {
+        background-color: #717171;
+      }
+
+    </style>
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <!-- Start GPT Tag -->
+    <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+    <script>
+      window.googletag = window.googletag || {
+        cmd: []
+      };
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/6062/GK-TSMhub-300x250-22.07.2022', [
+            [20, 10],
+            [30, 10],
+            [40, 10],
+            [80, 10],
+            [300, 250],
+            [848, 90],
+            [968, 90],
+            [770, 250],
+            [720, 90],
+            [800, 250],
+            [970, 250],
+            [1100, 250],
+            [728, 90],
+            [728, 180],
+            [1280, 250],
+            [1400, 250],
+            [1300, 250],
+            [1000, 250],
+            [31, 31]
+          ], 'top-ad')
+          .addService(googletag.pubads());
+        googletag.defineSlot('/6062/GK-TSMhub-300x250-22.07.2022', [
+            [10, 40],
+            [10, 30],
+            [10, 20],
+            [300, 250],
+            [500, 600],
+            [120, 600],
+            [160, 600],
+            [200, 600],
+            [300, 600],
+            [302, 600],
+            [770, 200],
+            [33, 31]
+          ], 'left-ad')
+          .addService(googletag.pubads());
+        googletag.defineSlot('/6062/GK-TSMhub-300x250-22.07.2022', [
+            [10, 40],
+            [10, 30],
+            [10, 20],
+            [300, 250],
+            [500, 600],
+            [120, 600],
+            [160, 600],
+            [200, 600],
+            [300, 600],
+            [302, 600],
+            [770, 200],
+            [33, 31]
+          ], 'right-ad')
+          .addService(googletag.pubads());
+
+
+        
+        googletag.pubads().disableInitialLoad();
+        googletag.enableServices();
+      });
+
+    </script>
+    <!-- End GPT Tag -->
+  </head>
+
+  <body>
+    <div id="top-ad" class="ad-container" min-wdith="1px" min-height="1px">
+      <script>
+        googletag.cmd.push(function() {
+          googletag.display('top-ad');
+        });
+
+      </script>
+    </div>
+    <div id="left-ad" class="ad-container" min-wdith="1px" min-height="1px">
+      <script>
+        googletag.cmd.push(function() {
+          googletag.display('left-ad');
+        });
+
+      </script>
+    </div>
+    <div id="right-ad" class="ad-container" min-wdith="1px" min-height="1px">
+      <script>
+        googletag.cmd.push(function() {
+          googletag.display('right-ad');
+        });
+
+      </script>
+    </div>
+    <h1>Click on the "Next" button to refresh the slots</h1>
+    <div class="slideshow-container">
+      <img class="slide" src="https://via.placeholder.com/500x300/FF0000/FFFFFF?text=Image+1" alt="Image 1">
+      <img class="slide" src="https://via.placeholder.com/500x300/00FF00/000000?text=Image+2" alt="Image 2">
+      <img class="slide" src="https://via.placeholder.com/500x300/0000FF/FFFFFF?text=Image+3" alt="Image 3">
+      <img class="slide" src="https://via.placeholder.com/500x300/FFFF00/000000?text=Image+4" alt="Image 4">
+      <img class="slide" src="https://via.placeholder.com/500x300/FF00FF/FFFFFF?text=Image+5" alt="Image 5">
+      <img class="slide" src="https://via.placeholder.com/500x300/00FFFF/000000?text=Image+6" alt="Image 6">
+      <img class="slide" src="https://via.placeholder.com/500x300/FFA500/000000?text=Image+7" alt="Image 7">
+      <img class="slide" src="https://via.placeholder.com/500x300/800080/FFFFFF?text=Image+8" alt="Image 8">
+      <img class="slide" src="https://via.placeholder.com/500x300/008000/FFFFFF?text=Image+9" alt="Image 9">
+      <img class="slide" src="https://via.placeholder.com/500x300/000080/FFFFFF?text=Image+10" alt="Image 10">
+      <img class="slide" src="https://via.placeholder.com/500x300/FFC0CB/000000?text=Image+11" alt="Image 11">
+      <img class="slide" src="https://via.placeholder.com/500x300/808080/FFFFFF?text=Image+12" alt="Image 12">
+
+      <a class="prev">&#10094;</a>
+      <a class="next" onclick="googletag.cmd.push(function() { googletag.pubads().refresh(); });">&#10095;</a>
+
+      <div class="dot-container">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      var slides = document.getElementsByClassName("slide");
+      var prevButton = document.querySelector(".prev");
+      var nextButton = document.querySelector(".next");
+      var dots = document.getElementsByClassName("dot");
+
+      showSlides();
+
+      function showSlides() {
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (var i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].className += " active";
+      }
+
+      prevButton.addEventListener("click", function() {
+        slideIndex--;
+        if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+        showSlides();
+      });
+
+      nextButton.addEventListener("click", function() {
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        }
+        showSlides();
+      });
+
+    </script>
+  </body>
+
+</html>
