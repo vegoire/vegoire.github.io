@@ -29,6 +29,20 @@
           "/6355419/Travel/Europe/France/Paris",
           googletag.enums.OutOfPageFormat.INTERSTITIAL,
         );
+		          if (interstitialSlot) {
+          // Register the slot and configure the triggers.
+          interstitialSlot.addService(googletag.pubads()).setConfig({
+            interstitial: {
+              triggers: {
+				backward: false,
+				endOfArticle: false,
+				inactivity: false,
+                navBar: false,
+                unhideWindow: false,
+              },
+            },
+          });
+        }
         // Enable SRA using the modern method.
         googletag.setConfig({
           singleRequest: true,
