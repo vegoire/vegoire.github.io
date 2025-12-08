@@ -18,15 +18,37 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script>
-  window.googletag = window.googletag || {cmd: []};
-  googletag.cmd.push(function() {
-    //googletag.defineSlot('/6062/300x250_grzegorzk_test', [300, 250], 'div-gpt-ad-1718016056058-0').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.enableServices();
-  });
-</script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      let interstitialSlot;
+      
+      googletag.cmd.push(() => {
+        // Define the web interstitial ad slot.
+        interstitialSlot = googletag.defineOutOfPageSlot(
+          "/307308315,22865227293/klickcafe.de",
+          googletag.enums.OutOfPageFormat.INTERSTITIAL,
+        );
+        if (interstitialSlot) {
+          // Register the slot and configure the triggers.
+          interstitialSlot.addService(googletag.pubads()).setConfig({
+            interstitial: {
+              triggers: {
+                navBar: true,
+                unhideWindow: true,
+              },
+            },
+          });
+        }
+        // Enable SRA using the modern method.
+        googletag.setConfig({
+          singleRequest: true,
+        });
+        // Enable services.
+        googletag.enableServices();
+        googletag.pubads().set("page_url", "https://www.klickcafe.de/index2.php");
+      });
+    </script>
 	
 </head>
 <body>
@@ -208,5 +230,11 @@
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/validate.js"></script>
+	 <script>
+      googletag.cmd.push(() => {
+        // Request the ad
+        googletag.display(interstitialSlot);
+      });
+    </script>
 </body>
 </html>
