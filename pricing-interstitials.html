@@ -33,7 +33,13 @@
         // Enable Single Request Architecture (SRA) and services.
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
-      });
+
+        // Explicitly call display to trigger the ad request for the interstitial.
+        // This MUST be called after enableServices() for the request to fire.
+        if (interstitialSlot) {
+          googletag.display(interstitialSlot);
+        }
+
     </script>
 
     <style>
