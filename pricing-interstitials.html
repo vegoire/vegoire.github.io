@@ -18,16 +18,16 @@
         );
 
         if (interstitialSlot) {
-          // Enable optional interstitial triggers and register the slot.
-          // Note: Clicking an anchor element (the default trigger) is enabled by default.
-          interstitialSlot.addService(googletag.pubads()).setConfig({
-            interstitial: {
-              triggers: {
-                navBar: true,
-                unhideWindow: true,
-              },
-            },
-          });
+          // // Enable optional interstitial triggers and register the slot.
+          // // Note: Clicking an anchor element (the default trigger) is enabled by default.
+          // interstitialSlot.addService(googletag.pubads()).setConfig({
+          //   interstitial: {
+          //     triggers: {
+          //       navBar: true,
+          //       unhideWindow: true,
+          //     },
+          //   },
+          // });
           console.log("GPT: Interstitial slot defined.");
         } else {
           console.warn("GPT: Interstitial slot returned null. Environment may not support it.");
