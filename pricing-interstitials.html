@@ -18,17 +18,14 @@
         );
 
         if (interstitialSlot) {
-        if (interstitialSlot) {
           // Register the slot.
           // Note: Clicking an anchor element (the default trigger) is enabled by default.
           interstitialSlot.addService(googletag.pubads());
           console.log("GPT: Interstitial slot defined.");
         } else {
-
-          console.log("GPT: Interstitial slot defined.");
-        } else {
           console.warn("GPT: Interstitial slot returned null. Environment may not support it.");
         }
+
 
         // Enable Single Request Architecture (SRA) and services.
         googletag.pubads().enableSingleRequest();
