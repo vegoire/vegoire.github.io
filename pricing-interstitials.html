@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Modified</title>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || { cmd: [] };
+      let interstitialSlot;
+
+      googletag.cmd.push(() => {
+        // Define a web interstitial ad slot.
+        // The slot returns null if the page or device does not support interstitials.
+        interstitialSlot = googletag.defineOutOfPageSlot(
+          "/6355419/Travel/Europe/France/Paris",
+          googletag.enums.OutOfPageFormat.INTERSTITIAL,
+        );
+
+        if (interstitialSlot) {
+          // Enable optional interstitial triggers and register the slot.
+          // Note: Clicking an anchor element (the default trigger) is enabled by default.
+          interstitialSlot.addService(googletag.pubads()).setConfig({
+            interstitial: {
+              triggers: {
+                navBar: true,
+                unhideWindow: true,
+              },
+            },
+          });
+        }
+
+        // Enable Single Request Architecture (SRA) and services.
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f9f9f9; }
+        header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; width: 85%; margin: auto; }
+        .logo img { height: 50px; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { text-decoration: none; color: #555; font-weight: 600; transition: color 0.3s; }
+        nav ul li a:hover { color: #007bff; }
+        
+        .container { width: 85%; margin: auto; padding: 40px 0; }
+        h1 { font-size: 2.5em; text-align: center; margin-bottom: 40px; color: #222; }
+        
+        .deals { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 50px; }
+        .deals h3 { color: #007bff; border-left: 5px solid #007bff; padding-left: 15px; margin-bottom: 20px; }
+        .deals p { color: #666; margin-bottom: 20px; }
+        .btn-blue { display: inline-block; background: #007bff; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+        .btn-blue:hover { background: #0056b3; }
+
+        .section-title { text-align: center; margin-bottom: 30px; color: #444; }
+        .pricing-table { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .plan { background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 30px; width: 23%; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s; margin-bottom: 20px; }
+        .plan:hover { transform: translateY(-5px); }
+        .plan h3 { font-size: 1.8em; margin-bottom: 10px; color: #333; }
+        .plan .price { font-size: 1.2em; color: #007bff; font-weight: bold; margin-bottom: 20px; display: block; }
+        .plan ul { list-style: none; padding: 0; margin-bottom: 30px; }
+        .plan ul li { padding: 10px 0; border-bottom: 1px solid #f4f4f4; color: #777; }
+        .plan ul li:last-child { border-bottom: none; }
+        .btn-dark { display: inline-block; background: #333; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; width: 80%; }
+        .btn-dark:hover { background: #000; }
+
+        footer { background: #2c3e50; color: #ecf0f1; padding: 60px 0 20px; margin-top: 60px; }
+        footer .footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; width: 85%; margin: auto; }
+        footer .footer-section { width: 22%; margin-bottom: 30px; }
+        footer h5 { color: #fff; font-size: 1.2em; margin-bottom: 25px; border-bottom: 2px solid #34495e; padding-bottom: 10px; }
+        footer p, footer li { font-size: 0.9em; color: #bdc3c7; line-height: 1.8; }
+        footer ul { list-style: none; padding: 0; }
+        footer ul li { margin-bottom: 12px; }
+        footer a { color: #bdc3c7; text-decoration: none; transition: color 0.3s; }
+        footer a:hover { color: #fff; }
+        .copyright { text-align: center; border-top: 1px solid #34495e; padding-top: 20px; margin-top: 40px; width: 100%; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="https://vegoire.github.io/index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://vegoire.github.io/index.html">Home</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">About Us</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Services</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Portfolio</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Pricing</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Pricing</h1>
+        
+        <div class="deals">
+            <h3>Our Best Deals!</h3>
+            <p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
+            <p>Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
+            <a href="https://vegoire.github.io/index.html" class="btn-blue">Read more</a>
+        </div>
+
+        <h2 class="section-title">Our best plans</h2>
+        <div class="pricing-table">
+            <div class="plan">
+                <h3>Basic</h3>
+                <span class="price">$15.00 / Year</span>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Bootstrap Design</li>
+                    <li>Unlimited Support</li>
+                    <li>Free Trial version</li>
+                    <li>HTML5 CSS3 jQuery</li>
+                </ul>
+                <a href="https://vegoire.github.io/index.html" class="btn-dark">Get Now</a>
+            </div>
+            <div class="plan">
+                <h3>Standard</h3>
+                <span class="price">$20.00 / Year</span>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Bootstrap Design</li>
+                    <li>Unlimited Support</li>
+                    <li>Free Trial version</li>
+                    <li>HTML5 CSS3 jQuery</li>
+                </ul>
+                <a href="https://vegoire.github.io/index.html" class="btn-dark">Get Now</a>
+            </div>
+            <div class="plan">
+                <h3>Advanced</h3>
+                <span class="price">$15.00 / Year</span>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Bootstrap Design</li>
+                    <li>Unlimited Support</li>
+                    <li>Free Trial version</li>
+                    <li>HTML5 CSS3 jQuery</li>
+                </ul>
+                <a href="https://vegoire.github.io/index.html" class="btn-dark">Get Now</a>
+            </div>
+            <div class="plan">
+                <h3>Mighty</h3>
+                <span class="price">$15.00 / Year</span>
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>Bootstrap Design</li>
+                    <li>Unlimited Support</li>
+                    <li>Free Trial version</li>
+                    <li>HTML5 CSS3 jQuery</li>
+                </ul>
+                <a href="https://vegoire.github.io/index.html" class="btn-dark">Get Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>Our Contact</h5>
+                <p><strong>Target company Inc</strong><br>
+                JC Main Road, Near Silnile tower<br>
+                Pin-21542 NewYork US.<br>
+                (123) 456-789 - 1255-12584<br>
+                email@domainname.com</p>
+            </div>
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="https://vegoire.github.io/index.html">Latest Events</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Terms and conditions</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Privacy policy</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Career</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Latest posts</h5>
+                <ul>
+                    <li><a href="https://vegoire.github.io/index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Natus error sit voluptatem accusantium doloremque</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Recent News</h5>
+                <ul>
+                    <li><a href="https://vegoire.github.io/index.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+                    <li><a href="https://vegoire.github.io/index.html">Natus error sit voluptatem accusantium doloremque</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; Target 2014 All right reserved. By <a href="https://vegoire.github.io/index.html">WebThemez</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
