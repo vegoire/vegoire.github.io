@@ -28,6 +28,9 @@
               },
             },
           });
+          console.log("GPT: Interstitial slot defined.");
+        } else {
+          console.warn("GPT: Interstitial slot returned null. Environment may not support it.");
         }
 
         // Enable Single Request Architecture (SRA) and services.
@@ -39,6 +42,7 @@
         if (interstitialSlot) {
           googletag.display(interstitialSlot);
         }
+      });
 
     </script>
 
